@@ -1,14 +1,6 @@
                    GROUP THREE
 MMUST HOSTEL BOOKING APPLICATION
 
-1.MUHAKO TREVOR         ITE/D/01-58933/2023
-2.MILKA WANYONA-         ITE/D/01-58982/2023
-3.ALBERT WEKESA          ITE/D/01-58959/2023
-4.Lloyd Joel                   ITE/D/01-58739/2023
-5.AMANI LAURYN            ITE/D/01-58117/2023
-6.EVANS SAKHASIA           ITE/D/01-58694 /2023
-7.Cynthia Muyelele             ITE/D/01-57030/2023
-8.SAFARI TAFFI DARLINE    ITE/D/01-58970/2023
        GROUP THREE
 
 HOSTEL BOOKING APPLICATION
@@ -28,6 +20,7 @@ Need simple and fast apps (not complicated).
 May have limited internet bundles, so the app must be lightweight.
 Not very technical → interface should be easy to understand.
 Types of Users
+
 1. Student User
 Main customer.
 Can search, compare, book rooms.
@@ -37,7 +30,7 @@ Can pay or reserve rooms (depending on features).
 Adds hostel details, rooms available, prices.
 Updates availability.
 Views bookings from students.
-3. System Admin (optional for student project)
+4. System Admin (optional for student project)
 Manages users and hostel listings.
 Removes fake or inappropriate listings.
 Handles app maintenance.

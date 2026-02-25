@@ -17,6 +17,7 @@ Prefer cheap, safe, and nearby accommodation.
 Need simple and fast apps (not complicated).
 May have limited internet bundles, so the app must be lightweight.
 Not very technical → interface should be easy to understand.
+
 Types of Users
 
 1. Student User

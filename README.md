@@ -1,7 +1,5 @@
-                   
+              GROUP THREE     
 MMUST HOSTEL BOOKING APPLICATION
-
-       GROUP THREE
 
 HOSTEL BOOKING APPLICATION
 

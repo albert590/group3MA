@@ -21,7 +21,7 @@ Not very technical → interface should be easy to understand.
 Types of Users
 
 1. Student User
-Main customer.
+Main User
 Can search, compare, book rooms.
 Can see room details (price, location, amenities).
 Can pay or reserve rooms (depending on features).

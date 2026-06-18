@@ -138,5 +138,5 @@ The system shall ensure stored data is accurate, consistent, and not duplicated
 Each booking shall be unique and correctly recorded.
 10. Backup & Recovery Requirements
 The system shall perform periodic backups.
-Data shall be recoverable in case of server failure or corruption
+Data shall be recoverable in case of server failure or corruption.
 

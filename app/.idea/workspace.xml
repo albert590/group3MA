@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95bf8b21-e155-4a41-961f-e9a3d5c5d24e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/AccessTokenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/AdminBookingAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/AdminLogsActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/AdminRegisterActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/AdminUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/DatabaseReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/OtpVerificationActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/PasswordUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/SystemLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/SystemLogAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/UserSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/mybooking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/paymentstatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/support.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/group3ma-f0430-default-rtdb-export (1).json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/gradient_overlay.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/hall1_room.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/hall_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/hostel_image_placeholder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/mmust.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/spinner_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ttt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/zzz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_admin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_admin_logs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_admin_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_ai_chat.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_app_disabled.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_mybooking.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_otp_verification.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_paymentstatus.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/activity_support.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/item_admin_booking.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/item_chat_message.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/item_system_log.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/layout/spinner_item_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/xml/network_security_config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/res/layout/activity_admin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dictionaries/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/dictionaries/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/ForgotPasswordActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/ForgotPasswordActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/Hostel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/Hostel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/HostelAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/HostelAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/HostelDetailsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/HostelDetailsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/MainActivity2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/activities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/bookingform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/bookingform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/homedashbordafterlogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/hostellistpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/hostellistpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/loginpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/loginpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/group3ma/registerpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/group3ma/registerpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_bookingform.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_bookingform.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_forgot_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_homedashbordafterlogin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_homedashbordafterlogin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hostel_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hostel_details.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_hostellistpage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_hostellistpage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_loginpage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_loginpage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_registerpage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_registerpage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/item_hostel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/item_hostel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="3F4PlvV2KcTqOEaEc7oBoSTwLCz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ALBERT/AndroidStudioProjects/mmust-connect/app"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95bf8b21-e155-4a41-961f-e9a3d5c5d24e" name="Changes" comment="" />
+      <created>1781331535583</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781331535583</updated>
+    </task>
+    <servers />
+  </component>
+</project>

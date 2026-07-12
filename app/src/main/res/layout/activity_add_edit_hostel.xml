@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvAddEditTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:text="Add New Hostel"
+            android:textColor="@color/text_light"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Hostel Name"
+            android:textColorHint="@color/text_secondary"
+            app:boxStrokeColor="@color/text_light"
+            app:hintTextColor="@color/text_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHostelName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_light" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Hostel Owner/Organization Name"
+            android:textColorHint="@color/text_secondary"
+            app:boxStrokeColor="@color/text_light"
+            app:hintTextColor="@color/text_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHostelOwner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_light" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Capacity"
+            android:textColorHint="@color/text_secondary"
+            app:boxStrokeColor="@color/text_light"
+            app:hintTextColor="@color/text_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHostelCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/text_light" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:hint="Price (e.g., KSH 15,000 / Semester)"
+            android:textColorHint="@color/text_secondary"
+            app:boxStrokeColor="@color/text_light"
+            app:hintTextColor="@color/text_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHostelPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_light" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:hint="Lat"
+                android:textColorHint="@color/text_secondary"
+                app:boxStrokeColor="@color/text_light"
+                app:hintTextColor="@color/text_light">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etHostelLatitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="@color/text_light" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Lon"
+                android:textColorHint="@color/text_secondary"
+                app:boxStrokeColor="@color/text_light"
+                app:hintTextColor="@color/text_light">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etHostelLongitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textColor="@color/text_light" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Amenities"
+            android:textColor="@color/text_light"
+            android:textStyle="bold" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cgAmenities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:chipSpacingHorizontal="8dp"
+            app:chipSpacingVertical="4dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipWifi"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wi-Fi"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/app_background"
+                app:chipStrokeColor="@color/text_secondary" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipHotWater"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hot Water"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/app_background"
+                app:chipStrokeColor="@color/text_secondary" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSecurity"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24/7 Security"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/app_background"
+                app:chipStrokeColor="@color/text_secondary" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipLaundry"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laundry Area"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/app_background"
+                app:chipStrokeColor="@color/text_secondary" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipStudy"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Study Room"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/app_background"
+                app:chipStrokeColor="@color/text_secondary" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipGym"
+                style="@style/Widget.MaterialComponents.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gym"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/app_background"
+                app:chipStrokeColor="@color/text_secondary" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:hint="Description / Info"
+            android:textColorHint="@color/text_secondary"
+            app:boxStrokeColor="@color/text_light"
+            app:hintTextColor="@color/text_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHostelDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:textColor="@color/text_light" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSaveHostel"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Save Hostel"
+            app:cornerRadius="28dp"
+            app:backgroundTint="@color/primaryDarkBlue" />
+
+    </LinearLayout>
+</ScrollView>

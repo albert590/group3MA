@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Base App Colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Recommended Theme Colors -->
+    <color name="primaryBlue">#1E88E5</color>      <!-- A slightly brighter professional blue -->
+    <color name="primaryDarkBlue">#1565C0</color>    <!-- A darker shade for status bars -->
+    <color name="accentAmber">#FFC107</color>      <!-- A vibrant accent color -->
+    
+    <!-- New Background and Text Colors -->
+    <color name="app_background">#263238</color>  <!-- A dark, professional blue-grey -->
+    <color name="text_light">#FFFFFF</color>      <!-- White text for high contrast -->
+    <color name="text_secondary">#BDBDBD</color>  <!-- A lighter grey for subtitles -->
+
+    <!-- Status Colors -->
+    <color name="status_success">#4CAF50</color>   <!-- Green for Approved/Paid -->
+    <color name="status_error">#F44336</color>      <!-- Red for Declined/Error -->
+    <color name="status_pending">#FFA000</color>     <!-- Amber/Orange for Pending -->
+
+    <!-- Old color, can be removed or kept for reference -->
     <color name="white_blue">#E3F2FD</color>
+
 </resources>

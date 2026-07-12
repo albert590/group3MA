@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white_blue"
     android:fillViewport="true"
-    tools:context=".MainActivity2">
+    tools:context=".activities">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main"
@@ -20,6 +20,7 @@
             android:layout_height="250dp"
             android:contentDescription="@string/hostel_banner_desc"
             android:scaleType="centerCrop"
+            android:background="@drawable/mmust"
             android:src="@mipmap/ic_launcher"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

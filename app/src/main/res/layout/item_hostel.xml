@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
+    app:cardBackgroundColor="#424242"
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp">
 
@@ -16,20 +18,38 @@
             android:id="@+id/ivHostelImage"
             android:layout_width="0dp"
             android:layout_height="150dp"
+            android:contentDescription="@string/hostel_banner_desc"
             android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvHostelName"
+            android:id="@+id/tvVerifiedBadge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Hall 3"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/badge_background"
+            android:padding="4dp"
+            android:text="🏆 Verified"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHostelName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/hall_name_placeholder"
+            android:textColor="@color/text_light"
             android:textSize="20sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tvPrice"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ivHostelImage" />
 
@@ -38,7 +58,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Capacity Remaining: 50"
+            android:text="@string/capacity_placeholder"
+            android:textColor="@color/text_secondary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvHostelName" />
 
@@ -46,18 +67,20 @@
             android:id="@+id/tvPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="KSH 20,000 / Semester"
+            android:layout_marginTop="8dp"
+            android:text="@string/price_placeholder"
+            android:textColor="@color/accentAmber"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvCapacity" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivHostelImage" />
 
         <Button
             android:id="@+id/btnViewDetails"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="View Details"
+            android:text="@string/view_details"
+            app:backgroundTint="@color/primaryDarkBlue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
 

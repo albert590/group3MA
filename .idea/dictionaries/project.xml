@@ -2,6 +2,7 @@
   <dictionary name="project">
     <words>
       <w>loginpage</w>
+      <w>paymentstatus</w>
     </words>
   </dictionary>
 </component>

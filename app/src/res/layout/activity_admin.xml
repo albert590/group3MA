@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:padding="16dp"
+    tools:context=".Admin">
+
+    <TextView
+        android:id="@+id/tvAdminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_panel_title"
+        android:textColor="@color/text_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swKillSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="System Status: Active "
+        android:textColor="@color/text_light"
+        android:thumbTint="@color/status_success"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdminTitle"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etSearchStudent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/search_student_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/text_light"
+        android:textColorHint="@color/text_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swKillSwitch"
+        tools:ignore="Autofill" />
+
+    <LinearLayout
+        android:id="@+id/llStudentActions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSearchStudent">
+
+        <Button
+            android:id="@+id/btnAddStudent"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="@string/add_student_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/primaryDarkBlue"
+            app:cornerRadius="28dp" />
+
+        <Button
+            android:id="@+id/btnDeleteStudent"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="@string/delete_student_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/status_error"
+            app:cornerRadius="28dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMoreActions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llStudentActions">
+
+        <Button
+            android:id="@+id/btnManageHostels"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Manage Hostels"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/primaryDarkBlue"
+            app:cornerRadius="28dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnViewLogs"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="@string/system_logs"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:backgroundTint="@color/primaryDarkBlue"
+            app:cornerRadius="28dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBookingsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/bookings_count_label"
+        android:textColor="@color/text_light"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llMoreActions" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAdminBookings"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogoutAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBookingsCount"
+        tools:listitem="@layout/item_admin_booking" />
+
+    <Button
+        android:id="@+id/btnLogoutAdmin"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/logout_button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/status_error"
+        app:cornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

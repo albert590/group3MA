@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity2 extends AppCompatActivity {
+public class activities extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         // Set Click Listener to navigate to Booking Form
         btnBookNow.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity2.this, bookingform.class);
+            Intent intent = new Intent(activities.this, bookingform.class);
             // You can pass extras here if needed, e.g., intent.putExtra("HOSTEL_NAME", "Hall Name");
             startActivity(intent);
         });

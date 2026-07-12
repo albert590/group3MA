@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:padding="16dp"
+    tools:context=".Admin">
+
+    <TextView
+        android:id="@+id/tvAdminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_panel_title"
+        android:textColor="@color/text_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llKillSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdminTitle">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swKillSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="System Status: Active "
+            android:textColor="@color/text_light"
+            android:thumbTint="@color/status_success"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnEmergencyLockdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/status_error"
+            android:text="🚨 EMERGENCY"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etSearchStudent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/search_student_hint"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/text_light"
+        android:textColorHint="@color/text_secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llKillSwitch"
+        tools:ignore="Autofill" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvBookingsCount"
+        app:layout_constraintTop_toBottomOf="@+id/etSearchStudent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="4dp">
+
+            <Button
+                android:id="@+id/btnAddStudent"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Add Student"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/primaryDarkBlue"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnDeleteStudent"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Delete Student"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/status_error"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnAddHostel"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Add Hostel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/primaryDarkBlue"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnDeleteHostel"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Delete Hostel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/status_error"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnEditHostel"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Edit Hostel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/primaryDarkBlue"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnManageHostels"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="Manage Hostels"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/primaryDarkBlue"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnViewLogs"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="System Logs"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/primaryDarkBlue"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnMaintenanceAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_columnSpan="2"
+                android:layout_margin="4dp"
+                android:text="Maintenance Requests"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/primaryDarkBlue"
+                app:cornerRadius="12dp" />
+
+        </GridLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvBookingsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/bookings_count_label"
+        android:textColor="@color/text_light"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/rvAdminBookings"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAdminBookings"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogoutAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/item_admin_booking" />
+
+    <Button
+        android:id="@+id/btnLogoutAdmin"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/logout_button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="@color/status_error"
+        app:cornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

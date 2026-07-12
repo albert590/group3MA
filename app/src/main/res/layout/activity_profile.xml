@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:padding="16dp"
+    tools:context=".profile">
+
+    <TextView
+        android:id="@+id/tvProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_title"
+        android:textColor="@color/text_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/name_label"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileTitle" />
+
+    <TextView
+        android:id="@+id/tvNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="John Doe"
+        android:textColor="@color/text_light"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvNameLabel" />
+
+    <TextView
+        android:id="@+id/tvEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/email_label"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameLabel" />
+
+    <TextView
+        android:id="@+id/tvEmailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="john.doe@example.com"
+        android:textColor="@color/text_light"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEmailLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvEmailLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvEmailLabel" />
+
+    <TextView
+        android:id="@+id/tvPhoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/phone_label"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailLabel" />
+
+    <TextView
+        android:id="@+id/tvPhoneValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="+1 123 456 7890"
+        android:textColor="@color/text_light"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPhoneLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvPhoneLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvPhoneLabel" />
+
+    <TextView
+        android:id="@+id/tvAdmissionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/admission_label"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneLabel" />
+
+    <TextView
+        android:id="@+id/tvAdmissionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="SCT/001/18"
+        android:textColor="@color/text_light"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAdmissionLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvAdmissionLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvAdmissionLabel" />
+
+    <TextView
+        android:id="@+id/tvPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/password_label"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdmissionLabel" />
+
+    <TextView
+        android:id="@+id/tvPasswordValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="********"
+        android:textColor="@color/text_light"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPasswordLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvPasswordLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvPasswordLabel" />
+
+    <TextView
+        android:id="@+id/tvBookingStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/profile_booking_status_label"
+        android:textColor="@color/text_secondary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPasswordLabel" />
+
+    <TextView
+        android:id="@+id/tvBookingStatusValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Approved"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBookingStatusLabel"
+        app:layout_constraintStart_toEndOf="@+id/tvBookingStatusLabel"
+        app:layout_constraintTop_toTopOf="@+id/tvBookingStatusLabel" />
+
+    <Button
+        android:id="@+id/btnLogoutProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/logout_button"
+        app:backgroundTint="@color/status_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,13 @@
 package com.example.group3ma;
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -10,10 +15,20 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class hostellistpage extends AppCompatActivity {
+
+    private HostelAdapter adapter;
+    private List<Hostel> hostelList;
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,27 +41,55 @@ public class hostellistpage extends AppCompatActivity {
             return insets;
         });
 
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("hostels");
+
+        EditText etSearch = findViewById(R.id.etSearch);
         RecyclerView rvHostelList = findViewById(R.id.rvHostelList);
         rvHostelList.setLayoutManager(new LinearLayoutManager(this));
 
-        List<Hostel> hostelList = new ArrayList<>();
-        // Sample Data
-        hostelList.add(new Hostel("Hall 1", 10, "KSH 15,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 2", 5, "KSH 22,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 3", 50, "KSH 20,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 4", 20, "KSH 18,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 5", 30, "KSH 21,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 6", 15, "KSH 19,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 7", 40, "KSH 23,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 8", 25, "KSH 20,500 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 9", 35, "KSH 21,500 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 10", 12, "KSH 17,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 11", 8, "KSH 24,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 12", 60, "KSH 16,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Hall 13", 100, "KSH 25,000 / Semester", R.mipmap.ic_launcher));
-        hostelList.add(new Hostel("Mashabiki", 45, "KSH 14,000 / Semester", R.mipmap.ic_launcher));
-
-        HostelAdapter adapter = new HostelAdapter(hostelList);
+        hostelList = new ArrayList<>();
+        adapter = new HostelAdapter(hostelList);
         rvHostelList.setAdapter(adapter);
+
+        fetchHostels();
+
+        etSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                adapter.filter(s.toString());
+            }
+            @Override
+            public void afterTextChanged(Editable s) {}
+        });
+    }
+
+    private void fetchHostels() {
+        mDatabase.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                hostelList.clear();
+                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+                    Hostel hostel = postSnapshot.getValue(Hostel.class);
+                    if (hostel != null) {
+                        if (hostel.getId() == null) {
+                            hostel.setId(postSnapshot.getKey());
+                        }
+                        hostelList.add(hostel);
+                    }
+                }
+                adapter.updateList(hostelList);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                if (error.getCode() == DatabaseError.PERMISSION_DENIED) {
+                    Toast.makeText(hostellistpage.this, "PERMISSION DENIED: Set Firebase Database Rules to true!", Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(hostellistpage.this, "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }

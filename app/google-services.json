@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "757353275896",
+    "firebase_url": "https://group3ma-f0430-default-rtdb.firebaseio.com",
+    "project_id": "group3ma-f0430",
+    "storage_bucket": "group3ma-f0430.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757353275896:android:7b00aa83b0ceda748af60d",
+        "android_client_info": {
+          "package_name": "com.example.group3ma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757353275896-p4b8hcs82eqjlim0bj9f42l4grul1kr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvLoR-lDrLH2HhotrOfh0sHxiVpmKjuKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757353275896-p4b8hcs82eqjlim0bj9f42l4grul1kr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
